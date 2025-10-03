@@ -1,3 +1,4 @@
+package codewars;
 public class DisplayMessage {
     public static void main(String[] args) {
         // Using a for loop to display the message 5 times

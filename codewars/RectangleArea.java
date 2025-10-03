@@ -1,3 +1,4 @@
+package codewars;
 import java.util.Scanner;
 
 public class RectangleArea {
