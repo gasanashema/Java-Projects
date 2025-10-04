@@ -24,5 +24,7 @@ public class Grade {
                 System.out.println("E");
                 break;
         }
+
+        sc.close();
     }
 }
