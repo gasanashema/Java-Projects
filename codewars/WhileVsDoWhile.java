@@ -1,3 +1,4 @@
+package codewars;
 public class WhileVsDoWhile {
     public static void main(String[] args) {
         int count = 5;
