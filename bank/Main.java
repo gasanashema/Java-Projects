@@ -32,5 +32,14 @@ public class Main {
         Deposit deposit = new Deposit(0, 0, 0);
         Withdraw withdraw = new Withdraw(0, 0, 0);
         Account account = new Account(0, null, 0, null);
+        // encapsulation is nothing but hidding data
+        // what ate data? : attributes, properties or it variables
+        /*
+         * your data has to be private
+         * you have to create getter and setter
+         */
+
+         account.setAccountNumber(123);
+         System.out.println(account.getAccountNumber());
     }
 }
