@@ -7,6 +7,8 @@ public class Student extends Department{
     private String studentPhone;
     private String studentEmail;
     private String major;
+    private int age;
+    private String gender;
 
     public Student() {
         super(0, "", "", "", 0, "", 0, "");
@@ -16,9 +18,11 @@ public class Student extends Department{
         this.studentPhone = "";
         this.studentEmail = "";
         this.major = "";
+        this.age = 0;
+        this.gender = "";
     }
 
-    public Student(int id, String gishushuAddress, String gishushuPhone, String gishushuEmail, int facultyId, String facultyName, int deptId, String deptName, String studentName, int studentId, String studentAddress, String studentPhone, String studentEmail, String major) {
+    public Student(int id, String gishushuAddress, String gishushuPhone, String gishushuEmail, int facultyId, String facultyName, int deptId, String deptName, String studentName, int studentId, String studentAddress, String studentPhone, String studentEmail, String major, int age, String gender) {
         super(id, gishushuAddress, gishushuPhone, gishushuEmail, facultyId, facultyName, deptId, deptName);
         this.studentName = studentName;
         this.studentId = studentId;
@@ -26,6 +30,8 @@ public class Student extends Department{
         this.studentPhone = studentPhone;
         this.studentEmail = studentEmail;
         this.major = major;
+        this.age = age;
+        this.gender = gender;
     }
     //getters and setters
     public String getStudentName() {
@@ -63,5 +69,25 @@ public class Student extends Department{
     }
     public void setMajor(String major) {
         this.major = major;
+    }
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        if (age >= 18 && age <= 70) {
+            this.age = age;
+        } else {
+            System.out.println("Age must be between 18 and 70.");
+        }
+    }
+    public String getGender() {
+        return gender;
+    }
+    public void setGender(String gender) {
+        if (gender.equalsIgnoreCase("Male") || gender.equalsIgnoreCase("Female")) {
+            this.gender = gender;
+        } else {
+            System.out.println("Gender must be Male or Female.");
+        }
     }
 }

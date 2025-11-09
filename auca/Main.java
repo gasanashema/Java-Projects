@@ -38,8 +38,13 @@ public class Main {
         String studentEmail = sc.nextLine();
         System.out.println("Enter the major: ");
         String major = sc.nextLine();
+        System.out.println("Enter the age: ");
+        int age = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter the gender: ");
+        String gender = sc.nextLine();
 
-        Student student = new Student(id, gishushuAddress, gishushuPhone, gishushuEmail, facultyId, facultyName, deptId, deptName, studentName, studentId, studentAddress, studentPhone, studentEmail, major);
+        Student student = new Student(id, gishushuAddress, gishushuPhone, gishushuEmail, facultyId, facultyName, deptId, deptName, studentName, studentId, studentAddress, studentPhone, studentEmail, major, age, gender);
         
     }
 }
