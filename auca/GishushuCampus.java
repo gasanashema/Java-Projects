@@ -21,18 +21,28 @@ public class GishushuCampus {
         return gishushuAddress;
     }
     public void setGishushuAddress(String gishushuAddress) {
+        if(gishushuAddress.isEmpty() || gishushuAddress.equalsIgnoreCase("gishushu")){
+            System.out.println("You should provide address");
+        }
         this.gishushuAddress = gishushuAddress;
     }
     public String getGishushuPhone() {
         return gishushuPhone;
     }
     public void setGishushuPhone(String gishushuPhone) {
+        if (!gishushuPhone.endsWith("8449")) {
+            System.out.println("Incorrect phone number");
+        }
         this.gishushuPhone = gishushuPhone;
     }
     public String getGishushuEmail() {
         return gishushuEmail;
     }
     public void setGishushuEmail(String gishushuEmail) {
+        if (!gishushuEmail.contains("auca@")) {
+            System.out.println("Invalid email");
+            return;
+        }
         this.gishushuEmail = gishushuEmail;
     }
 
